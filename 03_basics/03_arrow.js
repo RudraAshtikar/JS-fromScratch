@@ -15,12 +15,12 @@ const user = {
 
 // console.log(this);
 
-// function chai(){
-//     let username = "rudra"
-//     console.log(this.username);
-// }
+function chaii(){
+    let username = "rudra"
+    console.log(this);
+}
 
-// chai()
+chaii()
 
 
 const chai = () =>{
@@ -28,7 +28,7 @@ const chai = () =>{
     console.log(this);
 }
 
-// chai()
+chai()
 
 //****************Explicit return****************
 
@@ -46,8 +46,8 @@ const chai = () =>{
 const addTwo = (num1,num2) => ({username: "rudra"}) 
 //To retun an object it is necessary to wrap it inside a parantheses
 
-console.log(addTwo());
+// console.log(addTwo());
 
-const myArray= [2,3,4,5,6]
+// const myArray= [2,3,4,5,6]
 
-myArray.forEach()
+// myArray.forEach()
