@@ -1,7 +1,11 @@
+// forEach loop
+// specifically for arrays as it comes in array ka prototype
+
+
 const coding = ["js", "ruby", "java", "python", "C++"]
 
-// coding.forEach(function () { // callback functions are used in for each
-//     // console.log(val)
+// coding.forEach(function (val) { // callback functions are used in for each loop
+//     console.log(val)
 // });
 
 // coding.forEach((item) => {

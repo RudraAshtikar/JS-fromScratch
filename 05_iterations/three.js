@@ -11,10 +11,10 @@ for (const num of arr){
 
 const greetings = "Hello world"
 for (const greet of greetings) {
-    if(greetings == " "){
-        break
-    }
-    // console.log(`Each char is ${greet}`);
+                                                    // if(greetings == " "){
+                                                    //     break
+                                                    // }  inserted by me for understanding break
+    // // console.log(`Each char is ${greet}`);
 }
 
 // Maps
@@ -34,7 +34,7 @@ for (const [key, Value] of map) {
 //     game2 : "GTA"
 // }
 
-// for (const [key, Value] of myObject) { // object is not iterable by for of loop 
+// for (const [key, Value] of myObject) { // object is not iterable by "for of" loop 
 //     // console.log(key, ":-", Value);
 // }
 

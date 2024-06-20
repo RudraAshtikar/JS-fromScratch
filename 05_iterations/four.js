@@ -1,3 +1,5 @@
+// for in loop 
+
 const myObject = {
     js : 'javascript',
     py : 'python',
@@ -23,5 +25,5 @@ map.set('JP', "Japan")
 map.set('IN', "India")
 
 for (const key in map) {
-    console.log(key)
+    console.log(key)  //  for of loop does not even read this log statement 
 }
