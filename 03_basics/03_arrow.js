@@ -4,7 +4,7 @@ const user = {
 
     welcomeMessage: function(){
         console.log(`${this.username}, welcome to the website `);
-        console.log(this);
+        console.log(this);  // can use "this" inside an object 
     }
 
 }
@@ -17,7 +17,7 @@ const user = {
 
 function chaii(){
     let username = "rudra"
-    console.log(this);
+    console.log(this);  // can't use this inside a function 
 }
 
 chaii()
