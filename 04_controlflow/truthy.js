@@ -9,7 +9,7 @@ const userEmail = []
 
 //flasy values
 
-// false, 0,-0,BigInt, 0, "", null, undefined, NaN
+// false, 0,-0,BigInt, 0n, "", null, undefined, NaN
 
 //truthy values
 // "0", "false", " ", [], {}, function(){}
@@ -23,7 +23,7 @@ if(Object.keys(emptyObj).length === 0){
     console.log("Object is empty");
 }
 
-//Nullish Coalescing Operator (??): null undefined
+//Nullish Coalescing Operator (??): a kind of fallback in case the database returns us with null or undefined
 
 let val1;
 // val1=  5 ?? 10
