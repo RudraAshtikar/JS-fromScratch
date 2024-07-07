@@ -44,11 +44,12 @@ if (true){
 
 console.log(addone(5));
 
-function addone (num){ // a standalone function can have 
+function addone (num){ // a standalone function can have initialization before writing thr function
     return num+1
 }
 
-const addTwo = function(num){
+addTwo(5) // can't do this because of hoisting issue
+
+const addTwo = function(num){ // a function held inside a variable can't be initalize before 
     return num + 2
 }
-addtwo(5)
