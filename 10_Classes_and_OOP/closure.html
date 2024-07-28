@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body>
+    <button id= "orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // function init(){
+    //         console.log(secret);
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+    // outer()  let name = "Mozilla"
+    //     function displayName(){
+    //         console.log(name);
+    //     }
+    //     displayName()
+    // }
+    // init()
+
+    // function outer(){
+    //     let username = "hitesh"
+    //     console.log("Outer", secret);
+    //     function inner(){
+    //         let secret = "my123"
+    //         console.log("inner", username);
+    //     }
+
+    //     function innerTwo(){
+    //         console.log("innerTwo", username);
+      
+    // console.log("Too Outer", username);
+
+    function makeFunc(){
+        const name = "Mozilla";
+        function displayName(){
+            console.log(name);
+        }
+        return displayName
+        // so by retruning i would think that i'm only returning the displayname function
+        // but while this is true, the display name function will be returned with its lexical scope 
+        // and hence i will have access to const name aswell 
+        // this is closure
+    }
+
+    const myFunc = makeFunc();
+    myfunc();
+</script>
+
+<script>
+    document.getElementById('orange').onclick = function(){
+        document.body.style.backgroundColor = `orange`
+    }
+        document.getElementById('green').onclick = function(){
+        document.body.style.backgroundColor = `green`
+        // this is not efficient code as if i gave 1000 buttons it will become hectic very quick
+    }
+        
+    function clickHandler(color){
+    //     document.body.style.backgroundColor = `${color}`
+    // }
+
+    return function(){
+        // because of closure i have access to this color variable
+        // as the return function returns with the lexical socpe 
+        document.body.style.backgroundColor = `${color}`
+    }
+}
+
+document.getElementById('orange').onclick = clickHandler("orange")
+document.getElementById('green').onclick = clickHandler("green")
+
+
+</script>
+</html>
